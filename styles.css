@@ -3,6 +3,14 @@
                   text;
                 -webkit-text-fill-color:
                   transparent;
-                font-size: 50px;
+                font-size: 30px;
+                font-weight: bold;
+               }
+.gradient-text2 { background: linear-gradient(to right,#ffcc66,#ff66cc,#9933ff);
+                -webkit-background-clip:
+                  text;
+                -webkit-text-fill-color:
+                  transparent;
+                font-size: 30px;
                 font-weight: bold;
                }
