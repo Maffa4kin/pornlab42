@@ -103,26 +103,36 @@
         }
     </style>
 </head>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>18+</title>
+<style>
+#confirmAge {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 20px; /* делаем кнопку более округлой */
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#confirmAge:hover {
+    background-color: #cc5500; /* изменяем цвет кнопки при наведении */
+}
+</style>
+</head>
 <body>
-<div id="myModal" class="modal">
-    <div class="modal-content">
-        <h2>Внимание!</h2>
-        <p>Для доступа к сайту вам должно быть 18 лет. Подтвердите свой возраст.</p>
-        <button id="confirmAge">Мне есть 18 лет</button>
-    </div>
+<div id="ageVerification">
+    <h1>Вы действительно старше 18 лет?</h1>
+    <button id="confirmAge">Да, я совершеннолетний</button>
 </div>
-<script>
-    var modal = document.getElementById('myModal');
-    var confirmBtn = document.getElementById('confirmAge');
-    window.onload = function() {
-        modal.style.display = "block";
-    }
-
-    confirmBtn.onclick = function() {
-        modal.style.display = "none";
-    }
-
-</script>
-
 </body>
 </html>
+
