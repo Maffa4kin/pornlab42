@@ -183,15 +183,34 @@ function closeModal() {
 </body>
 </html>
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Play Music</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проигрывание музыки</title>
 </head>
+
 <body>
+    <audio id="myAudio" controls autoplay>
+        <source src="https://share.zvuk.com/cLQ0/8emldfgx" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
 
-<audio autoplay id="myAudio" volume="0.42">
-  <source src="https://share.zvuk.com/cLQ0/8emldfgx" type="audio/mp3">
-</audio>
+    <button onclick="toggleAudio()">Выключить музыку</button>
 
+    <script>
+        const audio = document.getElementById('myAudio');
+
+        function toggleAudio() {
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+    </script>
 </body>
+
 </html>
