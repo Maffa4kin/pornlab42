@@ -37,3 +37,21 @@ button {
     color: #fff;
     cursor: pointer;
 }
+/* Стили для десктопных устройств */
+.header {
+    font-size: 24px;
+}
+
+/* Стили для планшетов */
+@media only screen and (max-width: 768px) {
+    .header {
+        font-size: 20px;
+    }
+}
+
+/* Стили для мобильных устройств */
+@media only screen and (max-width: 480px) {
+    .header {
+        font-size: 16px;
+    }
+}
