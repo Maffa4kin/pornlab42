@@ -182,5 +182,52 @@ function closeModal() {
 
 </body>
 </html>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.audio-controls {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
 
+.audio-controls button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.audio-controls button:hover {
+  background-color: #45a049;
+}
+</style>
+</head>
+<body>
+<audio id="myAudio" autoplay loop>
+  <source src="https://drive.google.com/file/d/1hnNy2ztJ-a7c0rDq6-ZAqHYYzHmwtCud/view?usp=drivesdk.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<div class="audio-controls">
+  <button onclick="toggleAudio()">Выключить звук</button>
+</div>
+
+<script>
+var audio = document.getElementById('myAudio');
+
+audio.volume = 0.42;
+
+function toggleAudio() {
+  if (audio.paused) {
+    audio.play();
+  } else {
+    audio.pause();
+  }
+}
+</script>
+</body>
+</html>
 
